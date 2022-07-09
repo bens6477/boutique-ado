@@ -27,11 +27,11 @@
                         <div class="card h-100 border-0">
                             {% if product.image %}
                             <a href="">
-                                <img class="card-image-fluid image-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                <img class="card-image-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                             </a>
                             {% else %}
                             <a href="">
-                                <img class="card-image-fluid image-fluid" src="{{ MEDIA_URL }}no_image.png" alt="{{ product.name }}">
+                                <img class="card-image-top img-fluid" src="{{ MEDIA_URL }}no_image.png" alt="{{ product.name }}">
                             </a>
                             {% endif %}
                             <div class="card-body pb-0">
@@ -51,7 +51,7 @@
                             </div>
                         </div>
                     </div>
-                    {% if forloop.counter|divisibleby:4 %}
+                    {% if forloop.counter|divisibleby:1 %}
                     <div class="col-12 d-sm-none mb-5">
                         <hr>
                     </div>
